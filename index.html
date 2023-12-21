@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../projeto dweb 23 jornal/css/styles1.css">
+    <script type="text/javascript">
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'flex' : 'none';
+        }
+
+        // Use o evento touchstart para dispositivos móveis
+        document.querySelector('.menu-btn').addEventListener('touchstart', function () {
+            toggleMenu();
+        });
+    </script>
+
+    <title>Dweb Jornal</title>
+</head>
+<body>
+    <header class="sticky">
+        <button  class="bnt" onclick="toggleMenu()">Menu</button>
+        <h1>Dweb Jornal</h1>
+
+        <nav>
+            <ul>
+                <li><a  href="">Login</a></li>
+                <li><a href="">Sign In </a></li>
+            </ul>
+
+            <div class="menu-btn" onclick="toggleMenu()"> </div>
+
+            <nav class="menu">
+                <!-- Links de navegação -->
+                <a href="#">Portal IF </a>
+                <a href="#">Login  </a>
+                <a href="#">Cadastro </a>
+                <a href="#">Contatos </a>
+                <a href="#">Projetos </a>
+            </nav>
+        </nav>
+    </header>
+
+    <section class="destaques">
+        <article>
+            <Fieldset>
+                <legend>LABTEC </legend>
+
+                <img src="../projeto dweb 23 jornal/img/labtec.jpg" alt="">
+
+                <h2> UMA REVOLUÇÃO ESTÁ ACONTECENDO!</h2>
+                <p>Bem ao alcance dos nossos olhos... (na sala B105, para sermos mais exatos!) </p>
+                Da integração entre os núcleos das engenharias e de informática,   </p>
+                nasce um filho prodígio que cresceu, e está enchendo os pais de orgulho!   </p>
+                <a href="https://www.instagram.com/ifsudestemgjf/">Saiba Mais ...</a> </p>
+            </Fieldset>
+        </article>
+
+        <article>
+            <Fieldset>
+                <legend>LABTEC </legend>
+
+                <img src="../projeto dweb 23 jornal/img/labtec.jpg" alt="">
+
+                <h2> UMA REVOLUÇÃO ESTÁ ACONTECENDO!</h2>
+                <p>Bem ao alcance dos nossos olhos... (na sala B105, para sermos mais exatos!) <br></br>
+                Da integração entre os núcleos das engenharias e de informática,  <br></br>
+                nasce um filho prodígio que cresceu, e está enchendo os pais de orgulho!  <br></br>
+                <a href="https://www.instagram.com/ifsudestemgjf/">Saiba Mais ...</a> </p>
+            </Fieldset>
+        </article>
+
+      
+
+        <article>
+            <fieldset>
+                <legend>RECREAÇÃ INFANTOJUVENIL</legend>
+            <img src="../projeto dweb 23 jornal/img/infantil.webp" alt="">
+            <h4>DESCUBRA O PODER DA INLUSÃO!</h4>
+            <p>Participe da palestra sobre a "Recreação Infantojuvenil e Incorporação" <br></br>
+                no Miniauditório doBloco N, 28/11 às 19h! <br></br>
+                Maíla Corrêa, com 29 anos de expertise, <br></br>
+                compartilhará insights valiosos sobre a importância</p>
+            <br></br>
+            <a href="https://www.instagram.com/ifsudestemgjf/">Saiba Mais ...</a> </p>
+
+            </fieldset>
+        </article>
+
+        <article>
+            <fieldset>
+                <legend>DESCARTE CORRETO</legend>
+                <img src="../projeto dweb 23 jornal/img/lixo.jpeg" alt="">
+                <h5> FEZ O SEU DESCARTE CORRETO HOJE?</h5>
+                <p>Agora, em cada ponto de descarte do Campus JF existe uma lixeira de papelão<br></br>
+                   destinada para materiais como latas, garrafas,embalagens de plástico,<br></br> 
+                   papéis secos, papelão e tampas. <br></br>
+                   Não tem mais desculpa para misturar lixo reciclável com o comum <br></br>
+                  - acesse a notícia completa em nosso portal!</p>
+            </fieldset>
+             
+        </article>
+        <article>
+            <Fieldset>
+                <legend>LABTEC </legend>
+
+                <img src="../projeto dweb 23 jornal/img/labtec.jpg" alt="">
+
+                <h2> UMA REVOLUÇÃO ESTÁ ACONTECENDO!</h2>
+                <p>Bem ao alcance dos nossos olhos... (na sala B105, para sermos mais exatos!) <br></br>
+                Da integração entre os núcleos das engenharias e de informática,  <br></br>
+                nasce um filho prodígio que cresceu, e está enchendo os pais de orgulho!  <br></br>
+                <a href="https://www.instagram.com/ifsudestemgjf/">Saiba Mais ...</a> </p>
+            </Fieldset>
+        </article>
+
+        <article>
+            <Fieldset>
+                <legend>LABTEC </legend>
+
+                <img src="../projeto dweb 23 jornal/img/labtec.jpg" alt="">
+
+                <h2> UMA REVOLUÇÃO ESTÁ ACONTECENDO!</h2>
+                <p>Bem ao alcance dos nossos olhos... (na sala B105, para sermos mais exatos!) <br></br>
+                Da integração entre os núcleos das engenharias e de informática,  <br></br>
+                nasce um filho prodígio que cresceu, e está enchendo os pais de orgulho!  <br></br>
+                <a href="https://www.instagram.com/ifsudestemgjf/">Saiba Mais ...</a> </p>
+            </Fieldset>
+        </article>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Dweb Jornal. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
