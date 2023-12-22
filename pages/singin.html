@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles2.css">
+   
+ 
+    <title>Cadastro</title>
+</head>
+<body>
+   
+    <div class="card">
+        <h1>Cadastro</h1>
+        <div class="cadastro">
+            <div class="input-column">
+                <!-- First Column -->
+                <label class="user-label">Username:</label>
+                <input required="" type="text" name="user" autocomplete="off" class="input">
+                <br>
+                <label class="user-label">Nome:</label>
+                <input required="" type="text" name="nome" autocomplete="off" class="input">
+                <br>
+                <label class="user-label">Email:</label>
+                <input required="" type="email" name="email" autocomplete="off" class="input">
+                <br>
+                <label class="user-label">Senha:</label>
+                <input required="" id="pass" type="password" name="password" autocomplete="off" class="input" >
+                <br>
+               
+               
+            </div>
+            
+            <div class="input-column">
+                <!-- Second Column -->
+                <label class="user-label">Telefone (apenas números):</label>
+                <input required="" type="tel" name="telefone" pattern="[0-9]+" placeholder="(32)98888-8888" autocomplete="off"  maxlength="11" class="input">
+                <br>
+                <label for="cepInput">CEP:</label>
+                <input type="text" id="cepInput" name="cep" oninput="formatarCEP(event)" maxlength="9" class="input">
+
+                <br>
+                <label class="user-label">Rua:</label>
+                <input required="" type="text" name="nome" autocomplete="off" class="input">
+                <br>
+                <label class="user-label">Número:</label>
+                <input required="" type="number" name="Numero" autocomplete="off" maxlength="5" class="input">
+            </div>
+            
+            <button type="submit" class="btn-submit"><a href="../index.html">Cadastrar</a></button>
+        </div>
+    </div>
+
+    
+  <script>
+    function formatarCEP(event) {
+      // Obtém o valor atual do input
+      let cep = event.target.value;
+
+      // Remove caracteres não numéricos
+      cep = cep.replace(/\D/g, '');
+
+      // Adiciona os pontos e o traço nas posições corretas
+      if (cep.length >4) {
+        cep = cep.substring(0, 5) + '.' + cep.substring(5);
+      }
+
+    
+      // Atualiza o valor do input
+      event.target.value = cep;
+    }
+
+    // Impede a entrada de caracteres não numéricos
+    document.getElementById('cepInput').addEventListener('keydown', function (e) {
+      const allowedKeys = ['Backspace', 'ArrowLeft', 'ArrowRight', 'Delete'];
+
+      if (allowedKeys.includes(e.key)) {
+        // Se a tecla pressionada for Backspace, apaga todo o conteúdo
+        if (e.key === 'Backspace') {
+          document.getElementById('cepInput').value = '';
+        }
+      } else if (isNaN(parseInt(e.key, 11))) {
+        // Impede a entrada de caracteres não numéricos
+        e.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>
